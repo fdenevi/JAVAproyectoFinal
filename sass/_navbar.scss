@@ -1,0 +1,39 @@
+header{
+    background-color: white;
+    text-align: center;
+    padding: 2em;
+
+    a{
+        color: black;
+        font-family: 'Anton', sans-serif;
+
+        &:hover{
+            color: greenyellow;
+        }
+    }
+
+
+    form{
+        padding: 1em;
+        display: flex;
+        gap: 0.5em;
+        align-items: center;
+
+        button{
+            background-color: greenyellow;
+            border-radius: 0.5em;
+            padding: 0.5em;
+            width: fit-content;
+
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
+    i{
+        color: greenyellow;
+        font-size: 3em;
+    }
+}

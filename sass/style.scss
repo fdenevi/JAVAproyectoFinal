@@ -1,0 +1,287 @@
+@import "navbar";
+@import "generales";
+@import "inicio";
+@import "productos";
+@import "combos";
+@import "nosotrxs";
+@import "footer";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200&display=swap');
+
+
+@media (max-width: 986px){
+/* HEADER */
+    header{
+        a{
+        font-size: 2em;
+        }
+
+        .offcanvas{
+            align-items: center;
+        }
+
+        .offcanvas-end{
+            max-width: 30%;
+            padding: 1em;
+        }
+
+        form{
+            flex-direction: column;
+        }
+    }
+
+
+/* TITULOS */
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+
+
+/* INICIO */
+    #inicio{
+        padding-top: 10em;
+    }
+
+
+/* PRODUCTOS */
+    #productos{
+        padding: 10em 4em;
+        .productos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8em;
+
+            .productos1{
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
+            }
+
+            .productos2{
+                display: flex;
+                flex-direction: column;
+                gap: 3em;
+                align-items: center;
+            }
+
+            .productos3{
+                display: flex;
+                flex-direction: column;
+                gap: 8em;
+                align-items: center;
+            }
+
+            img{
+                max-width: 80%;
+            }
+
+            .info{
+                text-align: center;
+                h3{
+                    font-size: 2em;
+                }
+                p{
+                    font-size: 1.5em;
+                }
+                li{
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+
+/* COMBOS */
+    #combos{
+        padding: 10em 4em;
+        .combos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5em;
+        }
+
+    }
+
+
+/* NOSOTRXS */
+    #nosotrxs{
+        padding: 10em 4em;
+        p{
+            font-size: 2em;
+        }
+    }
+
+
+/* FOOTER */
+    #footer{
+        .contacto{
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1em;
+                font-size: 1.5em;
+
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 987px){
+/* HEADER */
+    header{
+        a{
+        font-size: 3em;
+        }
+
+        .offcanvas{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+        }
+    }
+
+
+/* TITULOS */
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 4em;
+    }
+
+
+/* INICIO */
+    #inicio{
+        padding-top: 12em;
+    }
+
+
+
+/* PRODUCTOS */
+    #productos{
+        padding: 12em;
+        .productos1{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2em;
+            padding: 4em 0;
+    
+            img{
+                max-width: 40%;
+            }
+    
+            .info{
+                text-align: left;
+
+                h3{
+                    font-size: 2.5em;
+                }
+                p{
+                    font-size: 2em;
+                }
+                li{
+                    font-size: 2em;
+                }
+            }
+        }
+    
+        .productos2{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            gap: 2em;
+            padding: 4em 0;
+    
+            img{
+                width: 40%;
+            }
+    
+            .info{
+                text-align: right;
+
+                h3{
+                    font-size: 2.5em;
+                }
+                p{
+                    font-size: 2em;
+                }
+                li{
+                    font-size: 2em;
+                }
+            }
+        }
+
+        .productos3{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 4em 0;
+        }
+    }
+
+
+/* COMBOS */
+    #combos{
+        padding: 12em;
+        .combos{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            img{
+                max-width: 30%;
+            }
+        }
+    }
+
+
+/* NOSOTRXS */
+    #nosotrxs{
+        padding: 12em;
+        p{
+            font-size: 3em;
+        }
+    }
+
+/* FOOTER */
+    #footer{
+        .contacto{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5em;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1em;
+                font-size: 2em;
+            }
+        }
+
+    }
+}
