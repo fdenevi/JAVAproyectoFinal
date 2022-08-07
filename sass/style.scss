@@ -173,14 +173,14 @@
 
 /* INICIO */
     #inicio{
-        padding-top: 12em;
+        padding-top: 14em;
     }
 
 
 
 /* PRODUCTOS */
     #productos{
-        padding: 12em;
+        padding: 14em 12em;
         .productos1{
             display: flex;
             align-items: center;
@@ -245,7 +245,7 @@
 
 /* COMBOS */
     #combos{
-        padding: 12em;
+        padding: 14em 12em;
         .combos{
             display: flex;
             align-items: center;
@@ -260,7 +260,7 @@
 
 /* NOSOTRXS */
     #nosotrxs{
-        padding: 12em;
+        padding: 14em 12em;
         p{
             font-size: 3em;
         }

@@ -321,11 +321,11 @@ h2 {
   }
   /* INICIO */
   #inicio {
-    padding-top: 12em;
+    padding-top: 14em;
   }
   /* PRODUCTOS */
   #productos {
-    padding: 12em;
+    padding: 14em 12em;
   }
   #productos .productos1 {
     display: -webkit-box;
@@ -399,7 +399,7 @@ h2 {
   }
   /* COMBOS */
   #combos {
-    padding: 12em;
+    padding: 14em 12em;
   }
   #combos .combos {
     display: -webkit-box;
@@ -417,7 +417,7 @@ h2 {
   }
   /* NOSOTRXS */
   #nosotrxs {
-    padding: 12em;
+    padding: 14em 12em;
   }
   #nosotrxs p {
     font-size: 3em;
