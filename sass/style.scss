@@ -43,13 +43,13 @@
 
 /* INICIO */
     #inicio{
-        padding-top: 10em;
+        padding-top: 6em;
     }
 
 
 /* PRODUCTOS */
     #productos{
-        padding: 10em 4em;
+        padding: 6em 4em;
         .productos{
             display: flex;
             flex-direction: column;
@@ -100,7 +100,7 @@
 
 /* COMBOS */
     #combos{
-        padding: 10em 4em;
+        padding: 6em 4em;
         .combos{
             display: flex;
             flex-direction: column;
@@ -113,7 +113,7 @@
 
 /* NOSOTRXS */
     #nosotrxs{
-        padding: 10em 4em;
+        padding: 6em 4em;
         p{
             font-size: 2em;
         }
@@ -173,14 +173,14 @@
 
 /* INICIO */
     #inicio{
-        padding-top: 14em;
+        padding-top: 9em;
     }
 
 
 
 /* PRODUCTOS */
     #productos{
-        padding: 14em 12em;
+        padding: 9em;
         .productos1{
             display: flex;
             align-items: center;
@@ -245,7 +245,7 @@
 
 /* COMBOS */
     #combos{
-        padding: 14em 12em;
+        padding: 9em;
         .combos{
             display: flex;
             align-items: center;
@@ -260,7 +260,7 @@
 
 /* NOSOTRXS */
     #nosotrxs{
-        padding: 14em 12em;
+        padding: 12em 9em;
         p{
             font-size: 3em;
         }

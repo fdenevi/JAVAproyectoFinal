@@ -2,7 +2,6 @@
 header {
   background-color: white;
   text-align: center;
-  padding: 2em;
 }
 
 header a {
@@ -41,7 +40,7 @@ header form button:hover {
 
 header i {
   color: greenyellow;
-  font-size: 3em;
+  font-size: 2em;
 }
 
 * {
@@ -113,13 +112,13 @@ h2 {
 }
 
 #footer {
-  padding: 5em 10em;
+  padding: 2em 3em 5em 3em;
   background-color: black;
 }
 
 #footer h2 {
   color: white;
-  padding: 2em 0 1em 0;
+  padding: 2em 0 0 0;
   font-size: 2em;
 }
 
@@ -160,11 +159,11 @@ h2 {
   }
   /* INICIO */
   #inicio {
-    padding-top: 10em;
+    padding-top: 6em;
   }
   /* PRODUCTOS */
   #productos {
-    padding: 10em 4em;
+    padding: 6em 4em;
   }
   #productos .productos {
     display: -webkit-box;
@@ -236,7 +235,7 @@ h2 {
   }
   /* COMBOS */
   #combos {
-    padding: 10em 4em;
+    padding: 6em 4em;
   }
   #combos .combos {
     display: -webkit-box;
@@ -253,7 +252,7 @@ h2 {
   }
   /* NOSOTRXS */
   #nosotrxs {
-    padding: 10em 4em;
+    padding: 6em 4em;
   }
   #nosotrxs p {
     font-size: 2em;
@@ -321,11 +320,11 @@ h2 {
   }
   /* INICIO */
   #inicio {
-    padding-top: 14em;
+    padding-top: 9em;
   }
   /* PRODUCTOS */
   #productos {
-    padding: 14em 12em;
+    padding: 9em;
   }
   #productos .productos1 {
     display: -webkit-box;
@@ -399,7 +398,7 @@ h2 {
   }
   /* COMBOS */
   #combos {
-    padding: 14em 12em;
+    padding: 9em;
   }
   #combos .combos {
     display: -webkit-box;
@@ -417,7 +416,7 @@ h2 {
   }
   /* NOSOTRXS */
   #nosotrxs {
-    padding: 14em 12em;
+    padding: 12em 9em;
   }
   #nosotrxs p {
     font-size: 3em;
