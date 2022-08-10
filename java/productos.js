@@ -88,11 +88,11 @@ function cuotas () {
     let cuota = parseInt(prompt("ingrese la cantidad de cuotas"))
     switch (cuota){
         case 3:
-            return (((resultado.precio*IVA)*1.15)/3)
+            return (((resultado.precio*IVA)*1.15)/3).toFixed(2)
         case 6:
-            return ((productos.precio*IVA)/6)
+            return ((productos.precio*IVA)/6).toFixed(2)
         case 12:
-            return (((productos.precio*IVA)*1.30)/12)
+            return (((productos.precio*IVA)*1.30)/12).toFixed(2)
         default:
             return console.warn("no ingreso un valor de cuota valido")
     }
