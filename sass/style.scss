@@ -5,6 +5,7 @@
 @import "combos";
 @import "nosotrxs";
 @import "footer";
+@import "stock";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200&display=swap');
@@ -60,21 +61,21 @@
             .productos1{
                 display: flex;
                 flex-direction: column;
-                gap: 3em;
+                gap: 1em;
                 align-items: center;
             }
 
             .productos2{
                 display: flex;
                 flex-direction: column;
-                gap: 3em;
+                gap: 1em;
                 align-items: center;
             }
 
             .productos3{
                 display: flex;
                 flex-direction: column;
-                gap: 8em;
+                gap: 2em;
                 align-items: center;
             }
 

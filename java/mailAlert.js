@@ -1,0 +1,1 @@
+const mail = (prompt ("Subscribite al newslatter y no te pierdas nunca ninguna de nuestras ofertas!!"))
