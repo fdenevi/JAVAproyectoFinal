@@ -5,66 +5,71 @@ function cambiarCelu () {
 
 
 /* CONSTANTES PRODUCTOS */
-const IMGprod1 = document.getElementById ("prod1")
-const TEXTOprod1 = document.getElementById ("prod1t")
+const IMGprod1 = document.querySelector (".prod1")
+const BTNcomprar1 = document.querySelector (".buttonComprar-1")
 
-const IMGprod2 = document.getElementById ("prod2")
-const TEXTOprod2 = document.getElementById ("prod2t")
+const IMGprod2 = document.querySelector (".prod2")
+const BTNcomprar2 = document.querySelector (".buttonComprar-2")
 
-const IMGprod3 = document.getElementById ("prod3")
-const TEXTOprod3 = document.getElementById ("prod3t")
+const IMGprod3 = document.querySelector (".prod3")
+const BTNcomprar3 = document.querySelector (".buttonComprar-3")
 
-const IMGprod4 = document.getElementById ("prod4")
-const TEXTOprod4 = document.getElementById ("prod4t")
+const IMGprod4 = document.querySelector (".prod4")
+const BTNcomprar4 = document.querySelector (".buttonComprar-4")
 
-const IMGprod5 = document.getElementById ("prod5")
-const TEXTOprod5 = document.getElementById ("prod5t")
+const IMGprod5 = document.querySelector (".prod5")
+const BTNcomprar5 = document.querySelector (".buttonComprar-5")
 
-const IMGprod6 = document.getElementById ("prod6")
-const TEXTOprod6 = document.getElementById ("prod6t")
+const IMGprod6 = document.querySelector (".prod6")
+const BTNcomprar6 = document.querySelector (".buttonComprar-6")
 
-const IMGprod7 = document.getElementById ("prod7")
-const TEXTOprod7 = document.getElementById ("prod7t")
+const IMGprod7 = document.querySelector (".prod7")
+const BTNcomprar7 = document.querySelector (".buttonComprar-7")
 
-const IMGprod8 = document.getElementById ("prod8")
-const TEXTOprod8 = document.getElementById ("prod8t")
+const IMGprod8 = document.querySelector (".prod8")
+const BTNcomprar8 = document.querySelector (".buttonComprar-8")
 
-const IMGprod9 = document.getElementById ("prod9")
-const TEXTOprod9 = document.getElementById ("prod9t")
+const IMGprod9 = document.querySelector (".prod9")
+const BTNcomprar9 = document.querySelector (".buttonComprar-9")
 
-const IMGprod10 = document.getElementById ("prod10")
-const TEXTOprod10 = document.getElementById ("prod10t")
+const IMGprod10 = document.querySelector (".prod10")
+const BTNcomprar10 = document.querySelector (".buttonComprar-10")
 
-const IMGprod11 = document.getElementById ("prod11")
-const TEXTOprod11 = document.getElementById ("prod11t")
+const IMGprod11 = document.querySelector (".prod11")
+const BTNcomprar11 = document.querySelector (".buttonComprar-11")
 
-const IMGprod12 = document.getElementById ("prod12")
-const TEXTOprod12 = document.getElementById ("prod12t")
+const IMGprod12 = document.querySelector (".prod12")
+const BTNcomprar12 = document.querySelector (".buttonComprar-12")
 
-const IMGprod13 = document.getElementById ("prod13")
+const IMGprod13 = document.querySelector (".prod13")
 
-const IMGprod14 = document.getElementById ("prod14")
+const IMGprod14 = document.querySelector (".prod14")
 
-const IMGprod15 = document.getElementById ("prod15")
+const IMGprod15 = document.querySelector (".prod15")
+
 
 
 /* LISTADO DE PRODUCTOS SIN STOCK */
 function sinStock () {
     IMGprod1.className = "fotoSinStock"
-    TEXTOprod1.innerText = "SIN STOCK"
-    TEXTOprod1.className = "textoSinStock"
+    BTNcomprar1.innerText = "SIN STOCK"
+    BTNcomprar1.className = "buttonSinStock"
+
+    IMGprod4.className = "fotoSinStock"
+    BTNcomprar4.innerText = "SIN STOCK"
+    BTNcomprar4.className = "buttonSinStock"
 
     IMGprod6.className = "fotoSinStock"
-    TEXTOprod6.innerText = "SIN STOCK"
-    TEXTOprod6.className = "textoSinStock"
+    BTNcomprar6.innerText = "SIN STOCK"
+    BTNcomprar6.className = "buttonSinStock"
 
     IMGprod11.className = "fotoSinStock"
-    TEXTOprod11.innerText = "SIN STOCK"
-    TEXTOprod11.className = "textoSinStock"
+    BTNcomprar11.innerText = "SIN STOCK"
+    BTNcomprar11.className = "buttonSinStock"
 
     IMGprod12.className = "fotoSinStock"
-    TEXTOprod12.innerText = "SIN STOCK"
-    TEXTOprod12.className = "textoSinStock"
+    BTNcomprar12.innerText = "SIN STOCK"
+    BTNcomprar12.className = "buttonSinStock"
 
     IMGprod13.className = "fotoSinStock"
 }

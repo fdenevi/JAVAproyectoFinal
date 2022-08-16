@@ -51,6 +51,11 @@
 /* PRODUCTOS */
     #productos{
         padding: 7em 4em;
+
+        .btn{
+            font-size: 1.5em;
+        }
+
         .productos{
             display: flex;
             flex-direction: column;
@@ -181,17 +186,18 @@
 
 /* PRODUCTOS */
     #productos{
-        padding: 11em;
+        padding: 11em 11em 0 11em;
+
+        .btn{
+            font-size: 2em;
+        }
+
         .productos1{
             display: flex;
             align-items: center;
             justify-content: space-around;
             gap: 2em;
             padding: 4em 0;
-    
-            img{
-                max-width: 40%;
-            }
     
             .info{
                 text-align: left;
@@ -215,10 +221,6 @@
             justify-content: space-around;
             gap: 2em;
             padding: 4em 0;
-    
-            img{
-                width: 40%;
-            }
     
             .info{
                 text-align: right;

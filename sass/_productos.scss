@@ -14,4 +14,19 @@
         align-items: center;
         gap: 1em;
     }
+
+    i{
+        font-size: 2em;
+    }
+
+    .btn{
+        background-color: greenyellow;
+        width: fit-content;
+        border-radius: 0.5em;
+
+        &:hover{
+            background-color: black;
+            color: greenyellow;
+        }
+    }
 }
