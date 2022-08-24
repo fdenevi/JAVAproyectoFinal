@@ -38,7 +38,7 @@ header form button:hover {
   color: white;
 }
 
-header .carrito i {
+header .carritoBag i {
   font-size: 1em;
 }
 
@@ -94,34 +94,27 @@ h2 {
   max-width: fit-content;
 }
 
-#productos .info {
-  line-height: 3em;
-}
-
-#productos .info li {
-  list-style-type: disc;
-  padding: 0 1em;
-}
-
-#productos .produ3 {
+#productos .productos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 8em;
 }
 
-#productos i {
-  font-size: 2em;
+#productos .productos .titleProd {
+  text-align: center;
 }
 
-#productos .btn {
+#productos .productos .btn {
   background-color: greenyellow;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -129,16 +122,9 @@ h2 {
   border-radius: 0.5em;
 }
 
-#productos .btn:hover {
+#productos .productos .btn:hover {
   background-color: black;
   color: greenyellow;
-}
-
-#combos .combos img {
-  border-style: solid;
-  border-radius: 3em;
-  border-width: 1em;
-  border-color: greenyellow;
 }
 
 #nosotrxs {
@@ -165,15 +151,76 @@ h2 {
   color: white;
 }
 
+#carrito h1 i {
+  color: greenyellow;
+  font-size: 2em;
+}
+
+#carrito .carritoTitulos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#carrito .carritoTitulos p {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: solid;
+  border-color: greenyellow;
+}
+
+#carrito .carritoProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#carrito .carritoProductos p {
+  text-align: center;
+  margin: 0;
+}
+
+#carrito .carritoProductos button {
+  font-size: 2em;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  color: red;
+}
+
 .fotoSinStock {
   -webkit-filter: grayscale(2);
           filter: grayscale(2);
 }
 
-.buttonSinStock {
-  cursor: not-allowed;
+.SS {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SS .textoSinStock {
   color: black;
   font-size: 2em;
+  border: solid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3em;
 }
 
 @media (max-width: 986px) {
@@ -212,92 +259,36 @@ h2 {
     padding: 7em 4em;
   }
   #productos .btn {
-    font-size: 1.5em;
-  }
-  #productos .productos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    gap: 8em;
-  }
-  #productos .productos .productos1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #productos .productos .productos2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #productos .productos .productos3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 4em;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #productos .productos img {
-    max-width: 80%;
-  }
-  #productos .productos .info {
-    text-align: center;
-  }
-  #productos .productos .info h3 {
     font-size: 2em;
   }
-  #productos .productos .info p {
-    font-size: 1.5em;
+  #productos .titleProd {
+    font-size: 2.5em;
   }
-  #productos .productos .info li {
-    font-size: 1.5em;
+  #productos .description {
+    font-size: 2em;
   }
-  /* COMBOS */
-  #combos {
+  #productos .price {
+    font-size: 2em;
+  }
+  /* CARRITO */
+  #carrito {
     padding: 7em 4em;
   }
-  #combos .combos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 5em;
+  #carrito .carritoTitulos p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+  }
+  #carrito .carritoProductos p {
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+  #carrito .carritoProductos button {
+    font-size: 2em;
+    border: none;
+    margin: 0;
+    padding: 0.5em;
+    background-color: transparent;
   }
   /* NOSOTRXS */
   #nosotrxs {
@@ -373,92 +364,49 @@ h2 {
   }
   /* PRODUCTOS */
   #productos {
-    padding: 11em 11em 0 11em;
-  }
-  #productos .btn {
-    font-size: 2em;
-  }
-  #productos .productos1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    gap: 2em;
-    padding: 4em 0;
-  }
-  #productos .productos1 .info {
-    text-align: left;
-  }
-  #productos .productos1 .info h3 {
-    font-size: 2.5em;
-  }
-  #productos .productos1 .info p {
-    font-size: 2em;
-  }
-  #productos .productos1 .info li {
-    font-size: 2em;
-  }
-  #productos .productos2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    gap: 2em;
-    padding: 4em 0;
-  }
-  #productos .productos2 .info {
-    text-align: right;
-  }
-  #productos .productos2 .info h3 {
-    font-size: 2.5em;
-  }
-  #productos .productos2 .info p {
-    font-size: 2em;
-  }
-  #productos .productos2 .info li {
-    font-size: 2em;
-  }
-  #productos .productos3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    padding: 4em 0;
-  }
-  /* COMBOS */
-  #combos {
     padding: 11em;
   }
-  #combos .combos {
+  #productos .info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    gap: 2em;
+    padding: 2em 6em;
   }
-  #combos .combos img {
-    max-width: 30%;
+  #productos .info .description {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  #productos .btn {
+    font-size: 2.5em;
+  }
+  #productos .titleProd {
+    font-size: 3em;
+  }
+  #productos .price {
+    font-size: 2.5em;
+  }
+  /* CARRITO */
+  #carrito {
+    padding: 11em;
+  }
+  #carrito .carritoTitulos p {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 1em;
+  }
+  #carrito .carritoProductos p {
+    font-size: 2em;
+    padding: 1em;
+  }
+  #carrito .carritoProductos button {
+    font-size: 2em;
+    border: none;
+    margin: 0;
+    padding: 1em;
   }
   /* NOSOTRXS */
   #nosotrxs {

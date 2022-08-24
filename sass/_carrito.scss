@@ -1,0 +1,40 @@
+#carrito{
+    h1{
+        i{
+            color: greenyellow;
+            font-size: 2em;
+        }
+    }
+
+    .carritoTitulos{
+        display: flex;
+        align-items: center;
+
+        p{
+            text-align: center;
+            background-color: black;
+            color: white;
+            border: solid;
+            border-color: greenyellow;
+        }
+    }
+
+    .carritoProductos{
+        display: flex;
+        align-items: center;
+
+       p{
+            text-align: center;
+            margin: 0;
+        }
+
+        button{
+            font-size: 2em;
+            border: none;
+            background-color: transparent;
+            margin: 0;
+            color: red;
+        }
+        
+    }
+}
