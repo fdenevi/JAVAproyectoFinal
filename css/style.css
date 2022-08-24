@@ -3,27 +3,19 @@ header {
   background-color: white;
   text-align: center;
 }
-
 header a {
   color: black;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
 }
-
 header a:hover {
   color: greenyellow;
 }
-
 header form {
   padding: 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.5em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 header form button {
   background-color: greenyellow;
   border-radius: 0.5em;
@@ -32,16 +24,13 @@ header form button {
   width: -moz-fit-content;
   width: fit-content;
 }
-
 header form button:hover {
   background-color: black;
   color: white;
 }
-
 header .carritoBag i {
   font-size: 1em;
 }
-
 header i {
   color: greenyellow;
   font-size: 2em;
@@ -54,14 +43,13 @@ header i {
 
 html {
   font-size: 62.5%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   width: 100%;
   height: 100%;
-  font-size: 'Dosis', sans-serif;
+  font-size: "Dosis", sans-serif;
 }
 
 /* LISTAS */
@@ -87,7 +75,6 @@ h2 {
 #inicio {
   background-color: black;
 }
-
 #inicio img {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
@@ -95,25 +82,16 @@ h2 {
 }
 
 #productos .productos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   gap: 8em;
 }
-
 #productos .productos .titleProd {
   text-align: center;
 }
-
 #productos .productos .btn {
   background-color: greenyellow;
   width: -webkit-fit-content;
@@ -121,7 +99,6 @@ h2 {
   width: fit-content;
   border-radius: 0.5em;
 }
-
 #productos .productos .btn:hover {
   background-color: black;
   color: greenyellow;
@@ -136,17 +113,14 @@ h2 {
   padding: 2em 3em 5em 3em;
   background-color: black;
 }
-
 #footer h2 {
   color: white;
   padding: 2em 0 0 0;
   font-size: 2em;
 }
-
 #footer i {
   color: greenyellow;
 }
-
 #footer p {
   color: white;
 }
@@ -155,16 +129,10 @@ h2 {
   color: greenyellow;
   font-size: 2em;
 }
-
 #carrito .carritoTitulos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #carrito .carritoTitulos p {
   text-align: center;
   background-color: black;
@@ -172,23 +140,18 @@ h2 {
   border: solid;
   border-color: greenyellow;
 }
-
 #carrito .carritoProductos {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 #carrito .carritoProductos p {
   text-align: center;
   margin: 0;
+  padding: 0.5em;
 }
-
 #carrito .carritoProductos button {
   font-size: 2em;
+  padding: 0.5em;
   border: none;
   background-color: transparent;
   margin: 0;
@@ -196,23 +159,14 @@ h2 {
 }
 
 .fotoSinStock {
-  -webkit-filter: grayscale(2);
-          filter: grayscale(2);
+  filter: grayscale(2);
 }
 
 .SS {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .SS .textoSinStock {
   color: black;
   font-size: 2em;
@@ -229,19 +183,14 @@ h2 {
     font-size: 2em;
   }
   header .offcanvas {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   header .offcanvas-end {
     max-width: 30%;
     padding: 1em;
   }
   header form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   /* TITULOS */
   h1 {
@@ -276,19 +225,13 @@ h2 {
   }
   #carrito .carritoTitulos p {
     font-size: 1.5em;
-    text-align: center;
     padding: 0.5em;
   }
   #carrito .carritoProductos p {
     font-size: 1.5em;
-    padding: 0.5em;
   }
   #carrito .carritoProductos button {
     font-size: 2em;
-    border: none;
-    margin: 0;
-    padding: 0.5em;
-    background-color: transparent;
   }
   /* NOSOTRXS */
   #nosotrxs {
@@ -299,15 +242,9 @@ h2 {
   }
   /* FOOTER */
   #footer .contacto div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     gap: 1em;
     font-size: 1.5em;
   }
@@ -315,41 +252,22 @@ h2 {
     margin-bottom: 0;
   }
 }
-
 @media (min-width: 987px) {
   /* HEADER */
   header a {
     font-size: 3em;
   }
   header .offcanvas {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
   header .offcanvas ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
   }
   /* TITULOS */
   h1 {
@@ -367,12 +285,8 @@ h2 {
     padding: 11em;
   }
   #productos .info {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 2em;
     padding: 2em 6em;
   }
@@ -395,18 +309,13 @@ h2 {
   }
   #carrito .carritoTitulos p {
     font-size: 2.5em;
-    text-align: center;
     padding: 1em;
   }
   #carrito .carritoProductos p {
     font-size: 2em;
-    padding: 1em;
   }
   #carrito .carritoProductos button {
     font-size: 2em;
-    border: none;
-    margin: 0;
-    padding: 1em;
   }
   /* NOSOTRXS */
   #nosotrxs {
@@ -417,28 +326,15 @@ h2 {
   }
   /* FOOTER */
   #footer .contacto {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     gap: 5em;
   }
   #footer .contacto div {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     gap: 1em;
     font-size: 2em;
   }
