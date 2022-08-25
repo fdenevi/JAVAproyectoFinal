@@ -4,6 +4,14 @@ const containerProductos = document.querySelector(".productos")
 const containerCompras = document.querySelector(".carrito")
 const btnBuscar = document.querySelector(".buscar")
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+const swalFire = () => {
+  Swal.fire({
+    icon: 'success',
+    text: 'Producto agragado al carrito',
+    showConfirmButton: false,
+    timer: 2000,
+  })
+}
 
 
 // ARRAY DE PRODUCTOS
@@ -238,6 +246,7 @@ function agregarFuncionalidad () {
     .querySelector(`.btn-agregar${prod.id}`)
     .addEventListener("click", () => {
       agregarAcarrito(prod)
+      swalFire()
     });
   });
 }
