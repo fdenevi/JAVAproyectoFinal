@@ -7,7 +7,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const swalFire = () => {
   Swal.fire({
     icon: 'success',
-    text: 'Producto agragado al carrito',
+    title: 'Producto agragado al carrito',
     showConfirmButton: false,
     timer: 2000,
   })
