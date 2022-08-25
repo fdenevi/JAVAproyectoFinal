@@ -1,9 +1,12 @@
+// CONSTANTES Y VARIABLES
 const IVA = 1.21
 const containerProductos = document.querySelector(".productos")
 const containerCompras = document.querySelector(".carrito")
+const btnBuscar = document.querySelector(".buscar")
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 
+// ARRAY DE PRODUCTOS
 const productosCONstock = [
   {
     id: 11,
@@ -146,11 +149,15 @@ const productos = [
 ]
 
 
+// RECORRER PRODUCTOS EN CONSOLA
 function recorrerProductos () {
-    productos.forEach(element => {console.table(element)});
+    productos.forEach(element => {
+      console.table(element)
+    });
 }
 
 
+// BUSCADOR DE PRODUCTOS POR NOMBRE
 function buscarProductosNOMBRE () {
     let prod = prompt ("Ingrese el producto a buscar:")
         prod = prod.toUpperCase()
@@ -159,34 +166,41 @@ function buscarProductosNOMBRE () {
 }
 
 
+// EVENTO BUSCAR PRODUCTOS POR NOMBRE
+btnBuscar.addEventListener("click", buscarProductosNOMBRE)
+
+
+// PRECIO FINAL PRODUCTOS CON IVA
 function precioConIVA () {
     let resultado = productos.map(producto => {
         return {
             precioFinal: producto.precio * IVA
         }
-    })
+    });
     console.table(resultado)
 }
 
 
+// PRECIO FINAL EN CUOTAS
 function cuotas () {
-    let prod = parseInt(prompt ("ingrese el id del producto:"))
-    const resultado = productos.find(element => {return element.id === prod})
+    let prod = parseInt(prompt ("ingrese el id del producto:"));
+    const resultado = productos.find(element => {return element.id === prod});
 
-    let cuota = parseInt(prompt("ingrese la cantidad de cuotas"))
+    let cuota = parseInt(prompt("ingrese la cantidad de cuotas"));
     switch (cuota){
         case 3:
             return (((resultado.precio*IVA)*1.15)/3).toFixed(2)
         case 6:
-            return ((productos.precio*IVA)/6).toFixed(2)
+            return ((resultado.precio*IVA)/6).toFixed(2)
         case 12:
-            return (((productos.precio*IVA)*1.30)/12).toFixed(2)
+            return (((resultado.precio*IVA)*1.30)/12).toFixed(2)
         default:
             return console.warn("no ingreso un valor de cuota valido")
     }
 }
 
 
+// PRINT PRODUCTOS EN HTML
 function printProductos() {
   productosCONstock.forEach((prod) => {
     containerProductos.innerHTML += `<div>
@@ -197,8 +211,8 @@ function printProductos() {
                                         </div>
                                       <p class="price">$${prod.precio}</p>
                                       <button class="btn btn-comprar btn-agregar${prod.id}">COMPRAR</button>
-                                    </div>`;
-  })
+                                    </div>`
+  });
   productosSINstock.forEach((prod) => {
     containerProductos.innerHTML += `<div>
                                       <h3 class="titleProd">${prod.nombre}</h3>
@@ -210,13 +224,14 @@ function printProductos() {
                                           <p class="price">$${prod.precio}</p>
                                           <p class="textoSinStock">SIN STOCK</p>
                                         </div>
-                                    </div>`;
-  })
+                                    </div>`
+  });
   agregarFuncionalidad()
 }
 printProductos()
 
 
+// ADDEVENTLISTENER BOTON COMPRAR (AGREGAR AL CARRITO)
 function agregarFuncionalidad () {
   productosCONstock.forEach ((prod) => {
     document
@@ -228,6 +243,7 @@ function agregarFuncionalidad () {
 }
 
 
+// INCREMENTANDO CANTIDAD DE UN MISMO PRODUCTO EN CARRITO
 function agregarAcarrito(prod) {
     let existe = carrito.some (prodSome => prodSome.id === prod.id)
       if (existe === false){
@@ -242,6 +258,7 @@ function agregarAcarrito(prod) {
 }
 
 
+// PRINT CARRITO EN HTML
 function printCarrito() {
   containerCompras.innerHTML = "";
 
@@ -259,6 +276,7 @@ function printCarrito() {
 printCarrito()
 
 
+// BORRAR PRODUCTOS CARRITO
 function borrarProducto () {
     carrito.forEach ((prod) => {
       document
@@ -266,6 +284,6 @@ function borrarProducto () {
       .addEventListener("click", () => {
         carrito = carrito.filter((prodFilter) => prodFilter.id !== prod.id)
         printCarrito()
-      });
     });
-  }
+  });
+}
