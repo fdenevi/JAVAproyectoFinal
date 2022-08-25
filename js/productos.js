@@ -245,16 +245,11 @@ function agregarFuncionalidad () {
 
 // INCREMENTANDO CANTIDAD DE UN MISMO PRODUCTO EN CARRITO
 function agregarAcarrito(prod) {
-    let existe = carrito.some (prodSome => prodSome.id === prod.id)
-      if (existe === false){
-        prod.cantidad = 1;
-        carrito.push(prod);
-      } else {
-        let prodFind = carrito.find(productoFind => productoFind.id === prod.id);
-        prod.cantidad ++
-      }
-      console.log(carrito);
-      printCarrito ()
+  let existe = carrito.some (prodSome => prodSome.id === prod.id);
+  let prodFind = carrito.find(productoFind => productoFind.id === prod.id);
+
+    existe === false ? (carrito.push(prod), prod.cantidad = 1) : (prodFind, prod.cantidad ++)
+    printCarrito ()
 }
 
 

@@ -97,7 +97,7 @@ h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 0.5em;
+  border-color: black;
 }
 #productos .productos .btn:hover {
   background-color: black;
@@ -170,11 +170,12 @@ h2 {
 .SS .textoSinStock {
   color: black;
   font-size: 2em;
-  border: solid;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0.3em;
+  border: solid black;
+  background-color: rgb(205, 204, 204);
 }
 
 @media (max-width: 986px) {
