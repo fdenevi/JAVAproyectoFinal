@@ -4,20 +4,18 @@ const containerProductos = document.querySelector(".productos")
 const containerCompras = document.querySelector(".carrito")
 const btnBuscar = document.querySelector(".buscar")
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-const swalFire = () => {
+const mail = () =>{
   Swal.fire({
-    icon: 'success',
-    title: 'Producto agragado al carrito',
-    showConfirmButton: false,
-    timer: 2000,
-    background: "#ffffff",
-    iconColor: "#adff2f",
-    color: "#000000",
-    allowOutsideClick: true,
-    allowEscapeKey: true,
-    timerProgressBar: true,
-  })
-}
+      title: 'Subscribite al newsletter y no te pierdas nunca ninguna de nuestras ofertas!!',
+      input: 'email',
+      inputPlaceholder: 'Enter your email address',
+      width: '40em',
+      color: '#716add',
+      background: '#fff',
+      backdrop: 'rgba(0,0,123,0.4)',
+      confirmButtonColor:'#adff2f'
+    });
+  }
 
 
 // ARRAY DE PRODUCTOS
@@ -240,6 +238,7 @@ function printProductos() {
                                         </div>
                                     </div>`
   });
+  mail()
   agregarFuncionalidad()
 }
 printProductos()
@@ -252,7 +251,20 @@ function agregarFuncionalidad () {
     .querySelector(`.btn-agregar${prod.id}`)
     .addEventListener("click", () => {
       agregarAcarrito(prod)
-      swalFire()
+      Toastify({
+        text: "Producto añadido al carrito",
+        duration: 3000,
+        newWindow: true,
+        close: true,
+        gravity: "bottom",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "#adff2f",
+          color: "#000000",
+        },
+        onClick: function(){}
+      }).showToast();
     });
   });
 }

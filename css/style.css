@@ -178,6 +178,11 @@ h2 {
   background-color: rgb(205, 204, 204);
 }
 
+.swal2-title {
+  font-size: 3em;
+  font-family: "Dosis", sans-serif;
+}
+
 @media (max-width: 986px) {
   /* HEADER */
   header a {
