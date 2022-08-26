@@ -10,6 +10,12 @@ const swalFire = () => {
     title: 'Producto agragado al carrito',
     showConfirmButton: false,
     timer: 2000,
+    background: "#ffffff",
+    iconColor: "#adff2f",
+    color: "#000000",
+    allowOutsideClick: true,
+    allowEscapeKey: true,
+    timerProgressBar: true,
   })
 }
 
