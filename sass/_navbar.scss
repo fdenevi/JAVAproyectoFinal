@@ -11,27 +11,15 @@ header{
         }
     }
 
-
-    form{
-        padding: 1em;
-        display: flex;
-        gap: 0.5em;
-        align-items: center;
-
-        button{
-            background-color: greenyellow;
-            border-radius: 0.5em;
-            padding: 0.5em;
-            width: fit-content;
-
-            &:hover{
-                background-color: black;
-                color: white;
-            }
-        }
+    .search{
+        border: none;
+        background-color: transparent;
     }
 
     .carritoBag{
+        border: none;
+        background-color: transparent;
+
         i{
             font-size: 1em;
         }

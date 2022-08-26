@@ -26,12 +26,8 @@
                 <img src="./img/logo.png" alt="logo" class="img-fluid w-100">
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-                <span><i class="fa-solid fa-align-justify"></i></span>
-            </button>
-    
             <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                <ul class="navbar-nav col-8">
+                <ul class="navbar-nav col-9">
                     <li class="nav-item">
                         <a class="nav-item active" href="#inicio">Inicio</a>
                     </li>
@@ -45,15 +41,22 @@
                         <a class="nav-item active" href="#footer">Contacto</a>
                     </li>
                 </ul>
+            </div>
 
-                <form>
-                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
-                    <button type="submit" class="buscar">Buscar</button>
-                </form>
-
-                <div class="carritoBag">
-                    <a href="#carrito"><i class="fa-solid fa-basket-shopping"></i></a>
+            <div class="navbar-icon-mobile">
+                <div>
+                    <button class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+    
+                    <button class="carritoBag">
+                        <a href="#carrito"><i class="fa-solid fa-basket-shopping"></i></a>
+                    </button>
                 </div>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <span><i class="fa-solid fa-align-justify"></i></span>
+                </button>
             </div>
         </nav>
     </div>

@@ -2,7 +2,7 @@
 const IVA = 1.21
 const containerProductos = document.querySelector(".productos")
 const containerCompras = document.querySelector(".carrito")
-const btnBuscar = document.querySelector(".buscar")
+const btnBuscar = document.querySelector(".search")
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const mail = () =>{
   Swal.fire({
