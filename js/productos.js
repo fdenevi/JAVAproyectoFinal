@@ -2,6 +2,7 @@
 const IVA = 1.21
 const containerProductos = document.querySelector(".productos")
 const containerCompras = document.querySelector(".carrito")
+const valorTotal = document.querySelector(".total")
 const btnBuscar = document.querySelector(".search")
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const mail = () =>{
@@ -283,7 +284,7 @@ function agregarAcarrito(prod) {
 // PRINT CARRITO EN HTML
 function printCarrito() {
   containerCompras.innerHTML = "";
-
+  let total = 0;
   carrito.forEach((prod) => {
       containerCompras.innerHTML += `<div class="carritoProductos">
                                         <p class="col-3">${prod.nombre}</p>
@@ -291,6 +292,9 @@ function printCarrito() {
                                         <p class="col-3">$${prod.precio * prod.cantidad}</p>
                                         <button class="col-3 btn-borrar${prod.id}">BORRAR</button>
                                       </div>`
+      valorTotal.innerHTML = `<div>
+                                <p>TOTAL: ${total += parseInt(prod.precio) * parseInt(prod.cantidad)}</p>
+                              </div>`
   });
   localStorage.setItem("carrito", JSON.stringify(carrito));
   borrarProducto()
