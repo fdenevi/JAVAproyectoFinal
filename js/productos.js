@@ -289,7 +289,7 @@ function printCarrito() {
                                         <p class="col-3">${prod.nombre}</p>
                                         <p class="col-3">${prod.cantidad}</p>
                                         <p class="col-3">$${prod.precio * prod.cantidad}</p>
-                                        <button class="col-3 btn-borrar${prod.id}">-</button>
+                                        <button class="col-3 btn-borrar${prod.id}">BORRAR</button>
                                       </div>`
   });
   localStorage.setItem("carrito", JSON.stringify(carrito));
