@@ -27,8 +27,8 @@ header i {
 }
 
 * {
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -149,12 +149,42 @@ h2 {
 }
 #carrito .totalProductos {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 3em;
   background-color: rgb(210, 209, 209);
 }
 #carrito .totalProductos p {
-  font-size: 3em;
+  padding: 0.5em;
+  margin: 0;
+}
+#carrito .formulario {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5em;
+}
+#carrito .formulario .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+#carrito .formulario .form p {
+  margin: 0;
+}
+#carrito .formulario button {
+  font-size: 2em;
+  padding: 0.5em;
+  background-color: greenyellow;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-color: black;
+}
+#carrito .formulario button:hover {
+  background-color: black;
+  color: greenyellow;
 }
 
 .fotoSinStock {
@@ -242,8 +272,11 @@ h2 {
   #carrito .carritoProductos p {
     font-size: 1.5em;
   }
-  #carrito .carritoProductos button {
-    font-size: 2em;
+  #carrito .totalProductos p {
+    font-size: 1.5em;
+  }
+  #carrito .formulario .form p {
+    font-size: 1.5em;
   }
   /* NOSOTRXS */
   #nosotrxs {
@@ -331,7 +364,10 @@ h2 {
   #carrito .carritoProductos p {
     font-size: 2em;
   }
-  #carrito .carritoProductos button {
+  #carrito .totalProductos p {
+    font-size: 2em;
+  }
+  #carrito .formulario .form p {
     font-size: 2em;
   }
   /* NOSOTRXS */

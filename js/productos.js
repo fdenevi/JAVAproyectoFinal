@@ -292,22 +292,22 @@ function printCarrito() {
                                         <p class="col-3">${prod.nombre}</p>
                                         <p class="col-3">${prod.cantidad}</p>
                                         <p class="col-3">$${prod.precio * prod.cantidad}</p>
-                                        <button class="col-3 btn-borrar${prod.id}">BORRAR</button>
+                                        <button class="col-3 btn-borrar${prod.id}">X</button>
                                       </div>`
 
       valorTotal.innerHTML = `<div class="totalProductos">
                                 <p>TOTAL: $${total += parseInt(prod.precio) * parseInt(prod.cantidad)}</p>
                               </div>`
 
-      form.innerHTML = `<div>
+      form.innerHTML = `<div class="form">
                             <p>NOMBRE Y APELLIDO</p>
                             <div><input type="text" name="name"></div>
                           </div>
-                          <div>
+                          <div class="form">
                               <p>TELEFONO</p>
                               <div><input type="text" name="phone"></div>
                           </div>
-                          <div>
+                          <div class="form">
                               <p>E-MAIL</p>
                               <div><input type="text" name="mail"></div>
                           </div>
