@@ -8,9 +8,9 @@ const btnBuscar = document.querySelector(".search")
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const mail = () =>{
   Swal.fire({
-      title: 'Subscribite al newsletter y no te pierdas nunca ninguna de nuestras ofertas!!',
+      title: 'Suscribite al newsletter y no te pierdas nunca ninguna de nuestras ofertas!!',
       input: 'email',
-      inputPlaceholder: 'Enter your email address',
+      inputPlaceholder: 'Ingrese aquí su email',
       width: '40em',
       color: '#716add',
       background: '#fff',

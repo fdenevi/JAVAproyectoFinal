@@ -10,7 +10,12 @@ btnComprar.forEach(element => {
   const btnFinalizarCompra = document.querySelector(".finalizar")
   function finalizarCompra() {
       btnFinalizarCompra.addEventListener("click", () => {
-        alert(`Muchas gracias por tu compra`)
+        Swal.fire({
+          title: 'Compra realizada con éxito ;) !',
+          text: 'Gracias por confiar en nosotrxs. En los próximos minutos recibirás un correo electrónico con el detalle de tu compra',
+          imageUrl: 'img/logo_bg.png',
+          imageAlt: 'Custom image',
+        })
       })
     }
   finalizarCompra()
