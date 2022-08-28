@@ -39,4 +39,15 @@
         }
         
     }
+
+    .totalProductos{
+        display: flex;
+        justify-content: center;
+        gap: 3em;
+        background-color: rgb(210, 209, 209);
+
+        p{
+            font-size: 3em;
+        }
+    }
 }

@@ -5,3 +5,12 @@ btnComprar.forEach(element => {
         element.title = 'agregar al carrito'     
     });
   });
+
+
+  const btnFinalizarCompra = document.querySelector(".finalizar")
+  function finalizarCompra() {
+      btnFinalizarCompra.addEventListener("click", () => {
+        alert(`Muchas gracias por tu compra`)
+      })
+    }
+  finalizarCompra()
