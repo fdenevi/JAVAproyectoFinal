@@ -178,40 +178,7 @@ function buscarProductosNOMBRE () {
         const resultado = productos.filter(element => element.nombre.includes(prod))
         console.table(resultado)
 }
-
-
-// EVENTO BUSCAR PRODUCTOS POR NOMBRE
 btnBuscar.addEventListener("click", buscarProductosNOMBRE)
-
-
-// PRECIO FINAL PRODUCTOS CON IVA
-function precioConIVA () {
-    let resultado = productos.map(producto => {
-        return {
-            precioFinal: producto.precio * IVA
-        }
-    });
-    console.table(resultado)
-}
-
-
-// PRECIO FINAL EN CUOTAS
-function cuotas () {
-    let prod = parseInt(prompt ("ingrese el id del producto:"));
-    const resultado = productos.find(element => {return element.id === prod});
-
-    let cuota = parseInt(prompt("ingrese la cantidad de cuotas"));
-    switch (cuota){
-        case 3:
-            return (((resultado.precio*IVA)*1.15)/3).toFixed(2)
-        case 6:
-            return ((resultado.precio*IVA)/6).toFixed(2)
-        case 12:
-            return (((resultado.precio*IVA)*1.30)/12).toFixed(2)
-        default:
-            return console.warn("no ingreso un valor de cuota valido")
-    }
-}
 
 
 // PRINT PRODUCTOS EN HTML
@@ -295,9 +262,7 @@ function printCarrito() {
                                         <button class="col-3 btn-borrar${prod.id}">X</button>
                                       </div>`
 
-      valorTotal.innerHTML = `<div class="totalProductos">
-                                <p>TOTAL: $${total += parseInt(prod.precio) * parseInt(prod.cantidad)}</p>
-                              </div>`
+      valorTotal.innerHTML = `$${total += parseInt(prod.precio) * parseInt(prod.cantidad)}`
 
       form.innerHTML = `<div class="form">
                             <p>NOMBRE Y APELLIDO</p>
