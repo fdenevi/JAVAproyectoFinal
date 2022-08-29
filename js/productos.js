@@ -305,11 +305,11 @@ function printCarrito() {
                           </div>
                           <div class="form">
                               <p>TELEFONO</p>
-                              <div><input type="text" name="phone" value="113458129"></div>
+                              <div><input type="tel" name="phone" value="113458129"></div>
                           </div>
                           <div class="form">
                               <p>E-MAIL</p>
-                              <div><input type="text" name="mail" value="ferluna@gmail.com"></div>
+                              <div><input type="email" name="email" value="ferluna@gmail.com"></div>
                           </div>
                           <div>
                               <button class="finalizar">FINALIZAR PEDIDO</button>
