@@ -254,34 +254,50 @@ function printCarrito() {
   containerCompras.innerHTML = "";
   let total = 0;
 
-  carrito.forEach((prod) => {
-      containerCompras.innerHTML += `<div class="carritoProductos">
-                                        <p class="col-3">${prod.nombre}</p>
-                                        <p class="col-3">${prod.cantidad}</p>
-                                        <p class="col-3">$${prod.precio * prod.cantidad}</p>
-                                        <button class="col-3 btn-borrar${prod.id}">X</button>
-                                      </div>`
+  if (carrito.length > 0) {
+    carrito.forEach((prod) => {
+        containerCompras.innerHTML += `<div class="carritoProductos">
+                                          <p class="col-3">${prod.nombre}</p>
+                                          <p class="col-3">${prod.cantidad}</p>
+                                          <p class="col-3">$${prod.precio * prod.cantidad}</p>
+                                          <button class="col-3 btn-borrar${prod.id}">X</button>
+                                        </div>`
 
-      valorTotal.innerHTML = `$${total += parseInt(prod.precio) * parseInt(prod.cantidad)}`
+        valorTotal.innerHTML = `TOTAL $${total += parseInt(prod.precio) * parseInt(prod.cantidad)}`
 
-      form.innerHTML = `<div class="form">
-                            <p>NOMBRE Y APELLIDO</p>
-                            <div><input type="text" name="name" id="name" value="Fer Luna"></div>
-                          </div>
-                          <div class="form">
-                              <p>TELEFONO</p>
-                              <div><input type="tel" name="phone" value="113458129"></div>
-                          </div>
-                          <div class="form">
-                              <p>E-MAIL</p>
-                              <div><input type="email" name="email" value="ferluna@gmail.com"></div>
-                          </div>
-                          <div>
-                              <button class="finalizar">FINALIZAR PEDIDO</button>
-                          </div>`
-  });
+        form.innerHTML = `<div class="form">
+                              <p>NOMBRE Y APELLIDO</p>
+                              <div><input type="text" name="name" id="name" value="Fer Luna"></div>
+                            </div>
+                            <div class="form">
+                                <p>TELEFONO</p>
+                                <div><input type="tel" name="phone" value="113458129"></div>
+                            </div>
+                            <div class="form">
+                                <p>E-MAIL</p>
+                                <div><input type="email" name="email" value="ferluna@gmail.com"></div>
+                            </div>
+                            <div>
+                              <button class="comprar">FINALIZAR COMPRA</button>
+                            </div>`
+    });
+  } else {
+    containerCompras.innerHTML = "";
+    valorTotal.innerHTML = "";
+    form.innerHTML= "";
+  }
   localStorage.setItem("carrito", JSON.stringify(carrito));
   borrarProducto()
+
+  const btnFinalizarCompra = document.querySelector(".comprar")
+  btnFinalizarCompra.addEventListener("click", () => {
+    Swal.fire({
+      title: 'Compra realizada con éxito ;) !',
+      text: `Gracias por confiar en nosotrxs ${document.querySelector("#name").value}. En los próximos minutos recibirás un correo electrónico con el detalle de tu compra`,
+      imageUrl: 'img/logo_bg.png',
+      imageAlt: 'Custom image',
+    });
+  })
 }
 printCarrito()
 

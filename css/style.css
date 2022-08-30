@@ -147,15 +147,10 @@ h2 {
   margin: 0;
   color: red;
 }
-#carrito .totalProductos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(210, 209, 209);
-}
-#carrito .totalProductos p {
+#carrito .total {
+  font-family: "Anton", sans-serif;
+  text-align: center;
   padding: 0.5em;
-  margin: 0;
 }
 #carrito .formulario {
   padding: 1em;
@@ -185,6 +180,9 @@ h2 {
 #carrito .formulario button:hover {
   background-color: black;
   color: greenyellow;
+}
+#carrito button, #carrito input, #carrito optgroup, #carrito select, #carrito textarea {
+  font-size: 2em;
 }
 
 .fotoSinStock {
@@ -276,8 +274,8 @@ h2 {
   #carrito .carritoProductos p {
     font-size: 1.5em;
   }
-  #carrito .totalProductos p {
-    font-size: 1.5em;
+  #carrito .total {
+    font-size: 2em;
   }
   #carrito .formulario .form p {
     font-size: 1.5em;
@@ -368,8 +366,8 @@ h2 {
   #carrito .carritoProductos p {
     font-size: 2em;
   }
-  #carrito .totalProductos p {
-    font-size: 2em;
+  #carrito .total {
+    font-size: 3em;
   }
   #carrito .formulario .form p {
     font-size: 2em;
