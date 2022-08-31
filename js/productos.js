@@ -254,37 +254,37 @@ function printCarrito() {
   containerCompras.innerHTML = "";
   let total = 0;
 
-  if (carrito.length > 0) {
-    carrito.forEach((prod) => {
-        containerCompras.innerHTML += `<div class="carritoProductos">
-                                          <p class="col-3">${prod.nombre}</p>
-                                          <p class="col-3">${prod.cantidad}</p>
-                                          <p class="col-3">$${prod.precio * prod.cantidad}</p>
-                                          <button class="col-3 btn-borrar${prod.id}">X</button>
-                                        </div>`
-
-        valorTotal.innerHTML = `TOTAL $${total += parseInt(prod.precio) * parseInt(prod.cantidad)}`
-
-        form.innerHTML = `<div class="form">
-                              <p>NOMBRE Y APELLIDO</p>
-                              <div><input type="text" name="name" id="name" value="Fer Luna"></div>
-                            </div>
-                            <div class="form">
-                                <p>TELEFONO</p>
-                                <div><input type="tel" name="phone" value="113458129"></div>
-                            </div>
-                            <div class="form">
-                                <p>E-MAIL</p>
-                                <div><input type="email" name="email" value="ferluna@gmail.com"></div>
-                            </div>
-                            <div>
-                              <button class="comprar">FINALIZAR COMPRA</button>
-                            </div>`
-    });
-  } else {
+  if (carrito.length === 0) {
     containerCompras.innerHTML = "";
     valorTotal.innerHTML = "";
     form.innerHTML= "";
+  } else {
+    carrito.forEach((prod) => {
+      containerCompras.innerHTML += `<div class="carritoProductos">
+                                        <p class="col-3">${prod.nombre}</p>
+                                        <p class="col-3">${prod.cantidad}</p>
+                                        <p class="col-3">$${prod.precio * prod.cantidad}</p>
+                                        <button class="col-3 btn-borrar${prod.id}">X</button>
+                                      </div>`
+
+      valorTotal.innerHTML = `TOTAL $${total += parseInt(prod.precio) * parseInt(prod.cantidad)}`
+
+      form.innerHTML = `<div class="form">
+                            <p>NOMBRE Y APELLIDO</p>
+                            <div><input type="text" name="name" id="name" value="Fer Luna"></div>
+                          </div>
+                          <div class="form">
+                              <p>TELEFONO</p>
+                              <div><input type="tel" name="phone" value="113458129"></div>
+                          </div>
+                          <div class="form">
+                              <p>E-MAIL</p>
+                              <div><input type="email" name="email" value="ferluna@gmail.com"></div>
+                          </div>
+                          <div>
+                            <button class="comprar">FINALIZAR COMPRA</button>
+                          </div>`
+    });
   }
   localStorage.setItem("carrito", JSON.stringify(carrito));
   borrarProducto()
