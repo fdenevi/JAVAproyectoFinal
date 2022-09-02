@@ -48,7 +48,11 @@ const retornoCardProducto = (prod) => {
 
 // ERROR HTML
 const retornoCardError = () =>{
-  return `<p>falta hacer esta parte</p>`
+  return `<div class="cardError">
+            <h2>DISCULPE LAS MOLESTIAS</h2>
+            <img src="img/error.png" alt="error">
+            <p>Estamos renovando la tienda.</p>
+          </div>`
 }
 
 
