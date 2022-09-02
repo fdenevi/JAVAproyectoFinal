@@ -54,7 +54,7 @@
 
 /* INICIO */
     #inicio{
-        padding-top: 6em;
+        padding-top: 5em;
     }
 
 
@@ -65,25 +65,37 @@
         .btn{
             font-size: 2em;
         }
-
         .titleProd{
             font-size: 2.5em;
         }
-
         .description{
             font-size: 2em;
         }
-        
         .price{
             font-size: 2em;
         }
+
+        .cardError{
+            h2{
+                font-size: 2em;
+            }
+            p{
+                font-size: 2em;
+            }
+        }
     }
-
-
+    
+    
 /* CARRITO */
     #carrito{
         padding: 7em 4em;
 
+        .carrito{
+            p{
+                font-size: 2em;
+            }
+        }
+    
         .carritoTitulos{
             p{
                 font-size: 1.5em;
@@ -163,7 +175,7 @@
         .navbar-icon-mobile{
             div{
                 display: flex;
-                align-items: center;
+                    align-items: center;
                 gap: 2em;
             }
         }
@@ -185,7 +197,6 @@
     }
 
 
-
 /* PRODUCTOS */
     #productos{
         padding: 11em;
@@ -201,17 +212,23 @@
                 text-align: left;
             }
         }
-
         .btn{
             font-size: 2.5em;
         }
-
         .titleProd{
             font-size: 3em;
         }
-
         .price{
             font-size: 2.5em;
+        }
+
+        .cardError{
+            h2{
+                font-size: 3em;
+            }
+            p{
+                font-size: 3em;
+            }
         }
     }
 
@@ -220,13 +237,19 @@
     #carrito{
         padding: 11em;
 
+        .carrito{
+            p{
+                font-size: 3em;
+            }
+        }
+
         .carritoTitulos{
             p{
                 font-size: 2.5em;
                 padding: 1em;
             }
         }
-    
+
         .carritoProductos{
             p{
                 font-size: 2em;
@@ -255,7 +278,7 @@
             font-size: 3em;
         }
     }
-
+    
 /* FOOTER */
     #footer{
         .contacto{
@@ -272,6 +295,5 @@
                 font-size: 2em;
             }
         }
-
     }
 }

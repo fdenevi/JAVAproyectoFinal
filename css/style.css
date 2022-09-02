@@ -22,7 +22,7 @@ header .carritoBag i {
   font-size: 1em;
 }
 header i {
-  color: greenyellow;
+  color: #F891CB;
   font-size: 2em;
 }
 
@@ -65,11 +65,6 @@ h2 {
 #inicio {
   background-color: black;
 }
-#inicio img {
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
-}
 
 #productos .productos {
   display: flex;
@@ -91,7 +86,18 @@ h2 {
 }
 #productos .productos .btn:hover {
   background-color: black;
-  color: greenyellow;
+  color: #F891CB;
+}
+#productos .productos .cardError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#productos .productos .cardError h2 {
+  padding-bottom: 1em;
+}
+#productos .productos .cardError img {
+  max-width: 70%;
 }
 
 #nosotrxs {
@@ -109,14 +115,17 @@ h2 {
   font-size: 2em;
 }
 #footer i {
-  color: greenyellow;
+  color: #F891CB;
 }
 #footer p {
   color: white;
 }
 
-#carrito h1 i {
-  color: greenyellow;
+#carrito .carrito p {
+  text-align: center;
+}
+#carrito h2 i {
+  color: #F891CB;
   font-size: 2em;
 }
 #carrito .carritoTitulos {
@@ -179,7 +188,7 @@ h2 {
 }
 #carrito .formulario button:hover {
   background-color: black;
-  color: greenyellow;
+  color: #F891CB;
 }
 #carrito button, #carrito input, #carrito optgroup, #carrito select, #carrito textarea {
   font-size: 2em;
@@ -245,7 +254,7 @@ h2 {
   }
   /* INICIO */
   #inicio {
-    padding-top: 6em;
+    padding-top: 5em;
   }
   /* PRODUCTOS */
   #productos {
@@ -263,9 +272,18 @@ h2 {
   #productos .price {
     font-size: 2em;
   }
+  #productos .cardError h2 {
+    font-size: 2em;
+  }
+  #productos .cardError p {
+    font-size: 2em;
+  }
   /* CARRITO */
   #carrito {
     padding: 7em 4em;
+  }
+  #carrito .carrito p {
+    font-size: 2em;
   }
   #carrito .carritoTitulos p {
     font-size: 1.5em;
@@ -355,9 +373,18 @@ h2 {
   #productos .price {
     font-size: 2.5em;
   }
+  #productos .cardError h2 {
+    font-size: 3em;
+  }
+  #productos .cardError p {
+    font-size: 3em;
+  }
   /* CARRITO */
   #carrito {
     padding: 11em;
+  }
+  #carrito .carrito p {
+    font-size: 3em;
   }
   #carrito .carritoTitulos p {
     font-size: 2.5em;

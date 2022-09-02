@@ -1,7 +1,12 @@
 #carrito{
-    h1{
+    .carrito{
+        p{
+            text-align: center;
+        }
+    }
+    h2{
         i{
-            color: greenyellow;
+            color: #F891CB;
             font-size: 2em;
         }
     }
@@ -73,7 +78,7 @@
         
             &:hover{
                 background-color: black;
-                color: greenyellow;
+                color: #F891CB;
             }
         }
     }

@@ -118,7 +118,7 @@ function printCarrito() {
   let total = 0;
 
   if (carrito.length === 0) {
-    containerCompras.innerHTML = "";
+    containerCompras.innerHTML = `<p>No tiene productos en su carrito</p>`;
     valorTotal.innerHTML = "";
     form.innerHTML= "";
   } else {
@@ -138,11 +138,11 @@ function printCarrito() {
                           </div>
                           <div class="form">
                               <p>TELEFONO</p>
-                              <div><input type="tel" name="phone" value="113458129"></div>
+                              <div><input type="tel" name="phone" id="phone" value="113458129"></div>
                           </div>
                           <div class="form">
                               <p>E-MAIL</p>
-                              <div><input type="email" name="email" value="ferluna@gmail.com"></div>
+                              <div><input type="email" name="email" id="email" value="ferluna@gmail.com"></div>
                           </div>
                           <div>
                             <button class="comprar">FINALIZAR COMPRA</button>
@@ -150,11 +150,11 @@ function printCarrito() {
     });
     const btnFinalizarCompra = document.querySelector(".comprar")
       btnFinalizarCompra.addEventListener("click", () => {
-        if (`${document.querySelector("#name").value}` === "") {
+        if (`${document.querySelector("#name").value}`=== "" || `${document.querySelector("#phone").value}`=== "" || `${document.querySelector("#email").value}` === "") {
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: 'Debe ingresar su nombre',
+            text: 'Debe ingresar todos sus datos',
           });
         } else {
           Swal.fire({
