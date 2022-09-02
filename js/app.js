@@ -2,6 +2,7 @@
 let productos = []
 let contenidoHTML = ""
 const containerProductos = document.querySelector(".productos")
+const carritoTitulos = document.querySelector(".carritoTitulos")
 const containerCompras = document.querySelector(".carrito")
 const valorTotal = document.querySelector(".total")
 const form = document.querySelector(".formulario")
@@ -118,11 +119,16 @@ function printCarrito() {
   let total = 0;
 
   if (carrito.length === 0) {
+    carritoTitulos.innerHTML = ""
     containerCompras.innerHTML = `<p>No tiene productos en su carrito</p>`;
     valorTotal.innerHTML = "";
     form.innerHTML= "";
   } else {
     carrito.forEach((prod) => {
+      carritoTitulos.innerHTML += `<p class="col-3">PRODUCTO</p>
+                                   <p class="col-3">CANTIDAD</p>
+                                   <p class="col-3">TOTAL</p>
+                                   <p class="col-3">BORRAR</p>`
       containerCompras.innerHTML += `<div class="carritoProductos">
                                         <p class="col-3">${prod.nombre}</p>
                                         <p class="col-3">${prod.cantidad}</p>
