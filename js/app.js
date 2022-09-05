@@ -125,10 +125,11 @@ function printCarrito() {
     form.innerHTML= "";
   } else {
     carrito.forEach((prod) => {
-      carritoTitulos.innerHTML += `<p class="col-3">PRODUCTO</p>
-                                   <p class="col-3">CANTIDAD</p>
-                                   <p class="col-3">TOTAL</p>
-                                   <p class="col-3">BORRAR</p>`
+      carritoTitulos.innerHTML = `<p class="col-3">PRODUCTO</p>
+                                  <p class="col-3">CANTIDAD</p>
+                                  <p class="col-3">TOTAL</p>
+                                  <p class="col-3">BORRAR</p>`
+                                  
       containerCompras.innerHTML += `<div class="carritoProductos">
                                         <p class="col-3">${prod.nombre}</p>
                                         <p class="col-3">${prod.cantidad}</p>
@@ -171,7 +172,7 @@ function printCarrito() {
           });
         }
       })
-  }
+  };
   localStorage.setItem("carrito", JSON.stringify(carrito));
   borrarProducto()
 }
