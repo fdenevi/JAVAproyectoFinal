@@ -129,7 +129,7 @@ function printCarrito() {
                                   <p class="col-3">CANTIDAD</p>
                                   <p class="col-3">TOTAL</p>
                                   <p class="col-3">BORRAR</p>`
-                                  
+
       containerCompras.innerHTML += `<div class="carritoProductos">
                                         <p class="col-3">${prod.nombre}</p>
                                         <p class="col-3">${prod.cantidad}</p>
