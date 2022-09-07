@@ -23,13 +23,12 @@ const mail = () =>{
   }
 
 
-// BUSCADOR DE PRODUCTOS POR NOMBRE
-btnBuscar.addEventListener("click", buscarProductosNOMBRE)
-function buscarProductosNOMBRE () {
-  let prod = prompt ("Ingrese el producto a buscar:")
-      prod = prod.toUpperCase()
-      const resultado = productos.filter(element => element.nombre.includes(prod))
-      console.log(resultado)
+// BUSCADOR DE PRODUCTOS
+btnBuscar.addEventListener("click", buscarProductos)
+function buscarProductos () {
+  let prod = prompt("que producto busca?").toLowerCase()
+      const resultado = productos.filter(element => element.buscador.includes(prod))
+      console.table(resultado)
 }
 
 
