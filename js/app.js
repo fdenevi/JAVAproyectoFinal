@@ -1,13 +1,13 @@
 // CONSTANTES Y VARIABLES
-let productos = []
-let contenidoHTML = ""
-const containerProductos = document.querySelector(".productos")
-const carritoTitulos = document.querySelector(".carritoTitulos")
-const containerCompras = document.querySelector(".carrito")
-const valorTotal = document.querySelector(".total")
-const form = document.querySelector(".formulario")
-const btnBuscar = document.querySelector(".search")
-const btnComprar = document.querySelectorAll("button.btn-agregar")
+let productos = [];
+let contenidoHTML = "";
+const containerProductos = document.querySelector(".productos");
+const carritoTitulos = document.querySelector(".carritoTitulos");
+const containerCompras = document.querySelector(".carrito");
+const valorTotal = document.querySelector(".total");
+const form = document.querySelector(".formulario");
+const btnBuscar = document.querySelector(".search");
+const btnComprar = document.querySelectorAll("button.btn-agregar");
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const mail = () =>{
   Swal.fire({
@@ -24,17 +24,17 @@ const mail = () =>{
 
 
 // BUSCADOR DE PRODUCTOS POR NOMBRE
+btnBuscar.addEventListener("click", buscarProductosNOMBRE)
 function buscarProductosNOMBRE () {
   let prod = prompt ("Ingrese el producto a buscar:")
       prod = prod.toUpperCase()
       const resultado = productos.filter(element => element.nombre.includes(prod))
-      console.table(resultado)
+      console.log(resultado)
 }
-btnBuscar.addEventListener("click", buscarProductosNOMBRE)
 
 
 // PRODUCTOS HTML
-const retornoCardProducto = (prod) => {
+const retornoProductos = (prod) => {
   return `<div>
             <h3 class="titleProd">${prod.nombre}</h3>
               <div class="info">
@@ -48,7 +48,7 @@ const retornoCardProducto = (prod) => {
 
 
 // ERROR HTML
-const retornoCardError = () =>{
+const retornoError = () =>{
   return `<div class="cardError">
             <h2>DISCULPE LAS MOLESTIAS</h2>
             <img src="img/error.png" alt="error">
@@ -64,12 +64,12 @@ const printProductos = async () =>{
         .then((prods) => {
           productos = prods
           productos.forEach(prod => {
-            contenidoHTML += retornoCardProducto(prod)
+            contenidoHTML += retornoProductos(prod)
           });
           containerProductos.innerHTML = contenidoHTML
         })
         .catch((error) => {
-          containerProductos.innerHTML = retornoCardError ()
+          containerProductos.innerHTML = retornoError ()
         })
   mail()
   agregarProducto()
