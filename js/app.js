@@ -170,6 +170,11 @@ function printCarrito() {
             imageUrl: 'img/logo_bg.png',
             imageAlt: 'Custom image',
           });
+          carritoTitulos.innerHTML = ""
+          containerCompras.innerHTML = `<p>No tiene productos en su carrito</p>`;
+          valorTotal.innerHTML = "";
+          form.innerHTML= "";
+          limpiarCarrito()
         }
       })
   };
@@ -177,6 +182,14 @@ function printCarrito() {
   borrarProducto()
 }
 printCarrito()
+
+
+// VACIAR CARRITO UNA VEZ FINALIZADA LA COMPRA
+function limpiarCarrito () {
+  carrito = [];
+  printCarrito();
+  localStorage.clear();
+}
 
 
 // BORRAR PRODUCTOS CARRITO

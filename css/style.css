@@ -194,26 +194,6 @@ h2 {
   font-size: 2em;
 }
 
-.fotoSinStock {
-  filter: grayscale(2);
-}
-
-.SS {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.SS .textoSinStock {
-  color: black;
-  font-size: 2em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 0.3em;
-  border: solid black;
-  background-color: rgb(205, 204, 204);
-}
-
 .swal2-title {
   font-size: 4em;
   font-family: "Dosis", sans-serif;
