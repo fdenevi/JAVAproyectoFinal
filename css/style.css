@@ -10,7 +10,7 @@ header a {
 header a:hover {
   color: greenyellow;
 }
-header .search {
+header .buscar {
   border: none;
   background-color: transparent;
 }

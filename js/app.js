@@ -1,14 +1,6 @@
 // CONSTANTES Y VARIABLES
 let productos = [];
 let contenidoHTML = "";
-const containerProductos = document.querySelector(".productos");
-const carritoTitulos = document.querySelector(".carritoTitulos");
-const containerCompras = document.querySelector(".carrito");
-const valorTotal = document.querySelector(".total");
-const form = document.querySelector(".formulario");
-const btnBuscar = document.querySelector(".search");
-const btnComprar = document.querySelectorAll("button.btn-agregar");
-let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const mail = () =>{
   Swal.fire({
       title: 'Suscribite al newsletter y no te pierdas nunca ninguna de nuestras ofertas!!',
@@ -24,12 +16,15 @@ const mail = () =>{
 
 
 // BUSCADOR DE PRODUCTOS
-btnBuscar.addEventListener("click", buscarProductos)
+const inputBuscar = document.querySelector("#buscador");
+const btnBuscar = document.querySelector(".buscar");
 function buscarProductos () {
-  let prod = prompt("que producto busca?").toLowerCase()
-      const resultado = productos.filter(element => element.buscador.includes(prod))
-      console.table(resultado)
+  // console.log(buscar.value);
+  let prod = inputBuscar.value.toLowerCase()
+      const respuesta = productos.filter(element => element.buscador.includes(prod))
+      console.table (respuesta)
 }
+btnBuscar.addEventListener('click', buscarProductos)
 
 
 // PRODUCTOS HTML
@@ -57,6 +52,7 @@ const retornoError = () =>{
 
 
 // PRINT PRODUCTOS EN HTML
+const containerProductos = document.querySelector(".productos");
 const printProductos = async () =>{
   await fetch('js/productos.json')
         .then((response) => response.json())
@@ -113,6 +109,11 @@ function agregarAcarrito(prod) {
 
 
 // PRINT CARRITO EN HTML
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+const carritoTitulos = document.querySelector(".carritoTitulos");
+const containerCompras = document.querySelector(".carrito");
+const valorTotal = document.querySelector(".total");
+const form = document.querySelector(".formulario");
 function printCarrito() {
   containerCompras.innerHTML = "";
   let total = 0;
@@ -140,15 +141,15 @@ function printCarrito() {
 
       form.innerHTML = `<div class="form">
                             <p>NOMBRE Y APELLIDO</p>
-                            <div><input type="text" name="name" id="name" value="Fer Luna"></div>
+                            <div><input type="text" name="name" id="name" placeholder="Nombre y Apellido" value="Fer Luna"></div>
                           </div>
                           <div class="form">
                               <p>TELEFONO</p>
-                              <div><input type="tel" name="phone" id="phone" value="113458129"></div>
+                              <div><input type="tel" name="phone" id="phone" placeholder="Celular" value="113458129"></div>
                           </div>
                           <div class="form">
                               <p>E-MAIL</p>
-                              <div><input type="email" name="email" id="email" value="ferluna@gmail.com"></div>
+                              <div><input type="email" name="email" id="email" placeholder="E-mail" value="ferluna@gmail.com"></div>
                           </div>
                           <div>
                             <button class="comprar">FINALIZAR COMPRA</button>
