@@ -107,7 +107,7 @@ function printCarrito() {
   let total = 0;
 
   if (carrito.length === 0) {
-    carritoTitulos.innerHTML = ""
+    carritoTitulos.innerHTML = "";
     containerCompras.innerHTML = `<p>No tiene productos en su carrito</p>`;
     valorTotal.innerHTML = "";
     form.innerHTML= "";
@@ -158,7 +158,7 @@ function printCarrito() {
             imageUrl: 'img/logo_bg.png',
             imageAlt: 'Custom image',
           });
-          carritoTitulos.innerHTML = ""
+          carritoTitulos.innerHTML = "";
           containerCompras.innerHTML = `<p>No tiene productos en su carrito</p>`;
           valorTotal.innerHTML = "";
           form.innerHTML= "";
