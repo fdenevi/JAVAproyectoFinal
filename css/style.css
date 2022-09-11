@@ -10,10 +10,6 @@ header a {
 header a:hover {
   color: greenyellow;
 }
-header .buscar {
-  border: none;
-  background-color: transparent;
-}
 header .carritoBag {
   border: none;
   background-color: transparent;
@@ -221,10 +217,6 @@ h2 {
     justify-content: flex-end;
     gap: 2em;
   }
-  header .navbar-icon-mobile div {
-    display: flex;
-    gap: 2em;
-  }
   /* TITULOS */
   h1 {
     font-size: 3em;
@@ -313,11 +305,6 @@ h2 {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-  }
-  header .navbar-icon-mobile div {
-    display: flex;
-    align-items: center;
-    gap: 2em;
   }
   /* TITULOS */
   h1 {

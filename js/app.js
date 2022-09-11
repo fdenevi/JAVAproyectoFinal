@@ -15,18 +15,6 @@ const mail = () =>{
   }
 
 
-// BUSCADOR DE PRODUCTOS
-const inputBuscar = document.querySelector("#buscador");
-const btnBuscar = document.querySelector(".buscar");
-function buscarProductos () {
-  // console.log(buscar.value);
-  let prod = inputBuscar.value.toLowerCase()
-      const respuesta = productos.filter(element => element.buscador.includes(prod))
-      console.table (respuesta)
-}
-btnBuscar.addEventListener('click', buscarProductos)
-
-
 // PRODUCTOS HTML
 const retornoProductos = (prod) => {
   return `<div>
