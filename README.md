@@ -1,6 +1,6 @@
 <i>Hola! Soy Flor Denevi</i> 🙋🏻‍♀️
 
-Fue un largo camino de aprendizaje, con altos y bajos, pero finalmente aquí llegué...
+Fue un largo camino de aprendizaje, con altos y bajos, pero finalmente aquí llegué... Este proyecto final es un e-commerce, siendo mas precisa, un grow shop.
 
 👩🏻‍💻 Los productos se encuentran en un archivo formato json, y traiga los datos con fetch para imrpimirlo en el HTML.
 
