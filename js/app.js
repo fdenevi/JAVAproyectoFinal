@@ -129,15 +129,15 @@ function printCarrito() {
 
       form.innerHTML = `<div class="form">
                             <p>NOMBRE Y APELLIDO</p>
-                            <div><input type="text" name="name" id="name" placeholder="Nombre y Apellido" value="Fer Luna"></div>
+                            <div><input type="text" name="name" id="name" placeholder="Nombre y Apellido"></div>
                           </div>
                           <div class="form">
                               <p>TELEFONO</p>
-                              <div><input type="tel" name="phone" id="phone" placeholder="Celular" value="113458129"></div>
+                              <div><input type="tel" name="phone" id="phone" placeholder="Celular"></div>
                           </div>
                           <div class="form">
                               <p>E-MAIL</p>
-                              <div><input type="email" name="email" id="email" placeholder="E-mail" value="ferluna@gmail.com"></div>
+                              <div><input type="email" name="email" id="email" placeholder="E-mail"></div>
                           </div>
                           <div>
                             <button class="comprar">FINALIZAR COMPRA</button>
